@@ -87,7 +87,7 @@ def validate_options(value):
     if (CONF_SET_POSITION_TOPIC in value and
             CONF_GET_POSITION_TOPIC not in value):
         raise vol.Invalid(
-            "Set position topic must be set together with get position topic.")
+            "Set position topic(set_position_topic) must be set together with get position topic(position_topic).")
     return value
 
 
